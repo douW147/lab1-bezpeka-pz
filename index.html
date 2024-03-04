@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шифрування та розшифрування тексту</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Шифрування та розшифрування тексту</h1>
+    <button onclick="toggleMode()">Перемкнути режим</button>
+    <div id="encryption" style="display: block;">
+        <h2>Шифрування</h2>
+        <textarea id="plaintext" placeholder="Введіть текст для шифрування"></textarea><br>
+        <input type="text" id="key" placeholder="Введіть ключ"><br>
+        <button onclick="encrypt()">Зашифрувати</button>
+    </div>
+    <div id="decryption" style="display: none;">
+        <h2>Розшифрування</h2>
+        <textarea id="encrypted_text" placeholder="Введіть зашифрований текст"></textarea><br>
+        <input type="text" id="decryption_key" placeholder="Введіть ключ"><br>
+        <button onclick="decrypt()">Розшифрувати</button>
+    </div>
+    <div id="decrypted_result"></div>
+    <script src="script.js"></script>
+</body>
+</html>

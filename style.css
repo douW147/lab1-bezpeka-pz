@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+textarea, input[type="text"] {
+  margin: 10px;
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#encryption, #decryption {
+  margin: 20px auto;
+  width: 50%;
+}
+
+#decryption {
+  display: none;
+}
